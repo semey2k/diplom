@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store</title>
+
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <img src="./img/loading.gif" alt="" class="loader">
+    
+    <section class="form__section">
+        <div class="form__container">
+
+        <div class="form">
+            <h1 class="form__heading">new here, sign up here</h1>
+            <input type="text" autocomplete="off" id="name" placeholder="full name">
+            <input type="text" autocomplete="off" id="email" placeholder="email">
+            <input type="password" autocomplete="off" id="password" placeholder="password">
+            <input type="text" autocomplete="off" id="number" placeholder="number">
+            <span class="error">**this is an error</span>
+
+            <div>
+                <input type="checkbox" id="tc"><label for="tc" class="tc__text">You agree to our <a href="#">terms and conditions</a></label>
+            </div>
+            <button class="submit__btn" >sign up</button>
+            <a href="/login" class="other__form">Already have an account?</a>
+        </div>
+        <img class="form__img" src="./img/signup-bg.png" alt="">
+        </div>
+        
+    </section>
+<script src="./js/form.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store: Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/add-product.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    
+    <nav class="navbar dark">
+        <ul class="links__container">
+            <li class="links__item">
+                    <a href="/" class="links">home</a>
+                </li>
+                <li class="links__item">
+                    <a href="/dashboard" class="links">add product</a>
+                </li>
+                <li class="links__item">
+                    <a href="/about" class="links">about</a>
+                </li>
+                <li class="links__item">
+                    <a href="/contact" class="links">contact</a>
+                </li>
+            </ul>
+            <div class="user__interactions">
+                <div class="search__box">
+                    <input type="text" class="search" placeholder="search item">
+                    <button class="search__btn"><img src="../img/search.png" alt=""></button>
+                </div>
+                <div class="cart" onclick = "location.href = '/cart'">
+                    <img src="../img/cart.png" class="cart__icon" alt="">
+                    <span class="cart__item__count">00</span>
+                </div>
+                <div class="user">
+                    <img src="../img/user.png" class="user__icon" alt="">
+                    <div class="user__popup">
+                        <p>login to your account</p>
+                        <a>login</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="error">
+        <p>some error occured</p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">checkout</h1>
+        <p class="text">delivery addres</p>
+
+        <input type="text" id="address" placeholder="address">
+        <input type="text" id="street" placeholder="street">
+        <div class="three-input-container">
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="state" placeholder="state">
+            <input type="text" id="pincode" placeholder="pincode">
+        </div>
+        <input type="text" id="landmark" placeholder="landmark">
+    </div>
+
+    <div class="cart__section">
+        <div class="product__list">
+            <p class="section__heading">your cart</p>
+            <div class="cart__container">
+            </div>
+     
+        </div> 
+              <div class="checkout__section">
+                <div class="checkout__box">
+                    <p class="text">your total bill,</p>
+                    <h1 class="bill">$00</h1>
+                    <button class="place-order-btn checkout__btn">place order</button>
+                </div>
+            </div>
+    </div>
+    <script src="./js/nav.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/checkout.js"></script>
+</body>
+</html>

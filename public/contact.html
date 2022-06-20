@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store - contact page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <nav class="navbar dark">
+        <ul class="links__container">
+            <li class="links__item">
+                    <a href="/" class="links">home</a>
+                </li>
+                <li class="links__item">
+                    <a href="/dashboard" class="links">add product</a>
+                </li>
+                <li class="links__item">
+                    <a href="/about" class="links">about</a>
+                </li>
+                <li class="links__item">
+                    <a href="/contact" class="links active">contact</a>
+                </li>
+            </ul>
+            <div class="user__interactions">
+                <div class="search__box">
+                    <input type="text" class="search" placeholder="search item">
+                    <button class="search__btn"><img src="../img/search.png" alt=""></button>
+                </div>
+                <div class="cart" onclick = "location.href = '/cart'">
+                    <img src="../img/cart.png" class="cart__icon" alt="">
+                    <span class="cart__item__count">00</span>
+                </div>
+                <div class="user">
+                    <img src="../img/user.png" class="user__icon" alt="">
+                    <div class="user__popup">
+                        <p>login to your account</p>
+                        <a>login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="contact__box">
+                <div class="left"></div>
+                <div class="right">
+                    <form action="https://formsubmit.co/a60f48b879154c565298fa0c18fd4da0" method="POST" >
+                    <h2>Contact Us</h2>
+                    <input type="text" name="Name" autocomplete="off" class="field" placeholder="Your Name">
+                    <input type="email" name="email" autocomplete="off" class="field" placeholder="Email">
+                    <input type="text" name="Phone" autocomplete="off" class="field" placeholder="Phone number">
+                    <textarea name="Message" class="field area" placeholder="Message"></textarea>
+                    <input type="hidden" name="_next" value="http://localhost:3000/.">
+                    <button class="btn">Send</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    <script src="./js/nav.js"></script>
+</body>
+</html>

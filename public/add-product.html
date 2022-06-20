@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store - Add product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/add-product.css">
+</head>
+<body>
+
+    <img src="../img/loading.gif" alt="" class="loader">
+
+    <h1 class="title">add product</h1>
+
+    <div class="error">
+        <p>some error occures</p>
+    </div>
+
+        <!-- product detail -->
+    <section class="product__section">
+        <!-- upload image -->
+        <div class="image__upload">
+            <input type="file" id="upload__image" accept="image/png, image/jpeg" hidden>
+            <label for="upload__image" class="upload__overlay">upload image</label>
+            <img class="product__img">
+        </div>
+
+        <div class="product__detail">
+            <h1 class="product__title" contenteditable="true" data-placeholder="product name">premium sofa</h1>
+            <p class="product__desc"  contenteditable="true" data-placeholder="short description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit, placeat et labore quasi pariatur.</p>
+            <div class="ratings disable">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/no fill star.png" alt="" class="star">
+                <span class="rating__count">4,023 reviews</span>
+            </div>
+            <p class="price" contenteditable="true" data-placeholder="price without $"></p>
+            <d class="btn__container disable">
+                <button class="product__btn buy__btn">buy now</button>
+                <button class="product__btn cart__btn">add to cart</button>
+            </d>
+        </div>
+    </section>
+    
+    <section class="detail__desc">
+        <h1 class="section__title">details</h1>
+        <p class="desc" contenteditable="true" data-placeholder="Details, you can add images using HTML img tag" ></p>
+    </section>
+    <section class="tags__section">
+        <h1 class="section__title">tags</h1>
+        <p class="text">enter some tags related to product, this will help in searching the product. Give comma separated tags.</p>
+        <p class="tags" contenteditable="true" data-placeholder="Details, you can add images using HTML img tag" >3 tags at least</p>
+    </section>
+
+    <div class="btn__wrapper">
+        <button class="product__btn add__product-btn">add product</button>
+        <button class="product__btn draft__btn">save draft</button>
+    </div>
+
+    <script src="../js/add-product.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

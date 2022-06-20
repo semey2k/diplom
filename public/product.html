@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store - product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <nav class="navbar dark">
+        <ul class="links__container">
+            <li class="links__item">
+                    <a href="/" class="links">home</a>
+                </li>
+                <li class="links__item">
+                    <a href="/dashboard" class="links">add product</a>
+                </li>
+                <li class="links__item">
+                    <a href="/about" class="links">about</a>
+                </li>
+                <li class="links__item">
+                    <a href="/contact" class="links">contact</a>
+                </li>
+            </ul>
+            <div class="user__interactions">
+                <div class="search__box">
+                    <input type="text" class="search" placeholder="search item">
+                    <button class="search__btn"><img src="../img/search.png" alt=""></button>
+                </div>
+                <div class="cart" onclick = "location.href = '/cart'">
+                    <img src="../img/cart.png" class="cart__icon" alt="">
+                    <span class="cart__item__count">00</span>
+                </div>
+                <div class="user">
+                    <img src="../img/user.png" class="user__icon" alt="">
+                    <div class="user__popup">
+                        <p>login to your account</p>
+                        <a>login</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <img src="../img/loading.gif" alt="" class="loader">
+
+        <!-- product detail -->
+    <section class="product__section">
+        <img src="../img/product-image.png" alt="" class="product__image">
+        <div class="product__detail">
+            <h1 class="product__title">premium sofa</h1>
+            <p class="product__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias velit, placeat et labore quasi pariatur.</p>
+            <div class="ratings">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/fill star.png" alt="" class="star">
+                <img src="../img/no fill star.png" alt="" class="star">
+                <span class="rating__count">4,023 reviews</span>
+            </div>
+            <p class="price">$ 499</p>
+            <d class="btn__container">
+                <button class="product__btn buy__btn">buy now</button>
+                <button class="product__btn cart__btn">add to cart</button>
+            </d>
+        </div>
+    </section>
+    
+    <section class="detail__desc">
+        <h1 class="section__title">details</h1>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eaque unde minus placeat repudiandae saepe.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eaque unde minus placeat repudiandae saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium quam soluta similique iste aut odio asperiores esse, assumenda perspiciatis. Quo cumque velit doloribus hic.</p>
+    </section>
+
+        <!-- review section -->
+    <section class="review__section">
+<!--             <h1 class="section__title">reviews</h1>
+            <div class="review__container">
+                <div class="review__card">
+                    <div class="user__dp" data-rating="4.9"><img src="../img/user 1.png" alt=""></div>
+                    <h2 class="review__title">best quality more than my expectation</h2>
+                    <p class="review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, doloremque.</p>
+                </div>
+            </div> -->
+    </section>
+
+    <section class="add__review">
+        <h1 class="section__title">add a review</h1>
+        <input type="text" class="review__headline" placeholder="review headline">
+        <textarea placeholder="review" class="review__field"></textarea>
+        <p class="rating__text">how much you liked the product</p>
+        <div class="star__container">
+            <img src="../img/no fill star.png" alt="" class="rating__star">
+            <img src="../img/no fill star.png" alt="" class="rating__star">
+            <img src="../img/no fill star.png" alt="" class="rating__star">
+            <img src="../img/no fill star.png" alt="" class="rating__star">
+            <img src="../img/no fill star.png" alt="" class="rating__star">
+            <span class="rating__count">4,023 reviews</span>
+        </div>
+        <span class="error">**this is an error</span>
+        <button class="add__btn">add review</button>
+    </section>
+
+        <!-- similar products  -->
+    <section class="best__selling">
+<!--         <h1 class="section__title">similar products</h1>
+        <div class="product__container">
+            <div class="product__card">
+                <img src="../img/product-1.png" class="product__img" alt="">
+                <p class="product__name">lights </p>
+            </div>     
+        </div> -->
+    </section>
+    <footer>made by modern web</footer>
+    <script src="../js/home.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/review.js"></script>
+</body>
+</html>
